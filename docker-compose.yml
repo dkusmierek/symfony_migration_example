@@ -2,10 +2,9 @@ version: "3"
 
 services:
   app:
-    image: php:7.3.11-fpm
+    build: ./.docker
     volumes:
       - ./:/app:delegated
-    working_dir: /app
 
   migration.dev.local:
     image: nginx:1.11
