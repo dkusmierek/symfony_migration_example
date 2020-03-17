@@ -1,7 +1,6 @@
 ENVIRONMENT_VARIABLES := $(shell env | grep -Eo '^[A-Za-z_][A-Za-z0-9_-]*' | sed -e "s/.*/-e &/")
 
 build:
-	cp .env.dist .env
 	docker-compose run --rm app composer --optimize-autoloader install
 
 start:
