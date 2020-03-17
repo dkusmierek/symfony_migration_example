@@ -1,0 +1,7 @@
+modern_index:
+  path: /modern
+  controller: App\Controller\ModernController::indexAction
+
+legacy_routes:
+  resource: App\LegacyRouteLoader::loadRoutes
+  type: legacy_routes

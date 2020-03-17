@@ -1,0 +1,20 @@
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+/legacy/cache/
+/legacy/log/
+legacy/.gitignore
+legacy/apps/frontend/i18n/
+legacy/plugins/
+legacy/test/functional/
+legacy/test/unit/
+legacy/web/images/
+legacy/web/js/
+legacy/web/uploads/
