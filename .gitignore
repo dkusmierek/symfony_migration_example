@@ -8,6 +8,7 @@
 /var/
 /vendor/
 ###< symfony/framework-bundle ###
+.idea
 /legacy/cache/
 /legacy/log/
 legacy/.gitignore
