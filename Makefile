@@ -1,5 +1,5 @@
 build:
-	docker-compose run --rm app composer --optimize-autoloader install
+	docker run --rm -v $(CURDIR):/app -w /app composer --optimize-autoloader install
 
 start:
 	docker-compose up -d

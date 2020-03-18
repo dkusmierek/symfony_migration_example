@@ -2,7 +2,7 @@ version: "3"
 
 services:
   app:
-    build: ./.docker
+    image: php:7.3.11-fpm
     volumes:
       - ./:/app:delegated
 
