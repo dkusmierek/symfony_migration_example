@@ -3,14 +3,16 @@ An exemplary project presenting migration from Symfony 1.4 to Symfony 4.4 using 
 
 ## Project Structure
 ### Important files
-- config/services.yaml
-- config/routes.yaml
-- legacy/web/index.php
-- src/Controller/LegacyController.php
-- src/Controller/ModernController.php
-- src/LegacyRouteLoader.php
+- [config/services.yaml](https://github.com/dkusmierek/symfony_migration_example/blob/master/config/services.yaml)
+- [config/routes.yaml](https://github.com/dkusmierek/symfony_migration_example/blob/master/config/routes.yaml)
+- [legacy/web/index.php](https://github.com/dkusmierek/symfony_migration_example/blob/master/legacy/web/index.php)
+- [src/Controller/LegacyController.php](https://github.com/dkusmierek/symfony_migration_example/blob/master/src/Controller/LegacyController.php)
+- [src/Controller/ModernController.php](https://github.com/dkusmierek/symfony_migration_example/blob/master/src/Controller/ModernController.php)
+- [src/LegacyRouteLoader.php](https://github.com/dkusmierek/symfony_migration_example/blob/master/src/LegacyRouteLoader.php)
 
 ## Legacy Route Loader
+The migration is based on a Legacy Route Loader. An approach is described in the articles attached in the [References](#references) section. In short, there is a route loader service implemented in the modern (Symfony 4.4)  application. Route loader is responsible for creating legacy routes. All the routes are serviced by LegacyController
+which in turn runs appropriate legacy scripts and returns a response.
 
 ## How to run a project?
 In order to run a project, there is a Makefile available to simplify this process. To do this please run the following commands ina root directory:
@@ -45,7 +47,7 @@ modern one is visible on the bottom
 - The second one (Symfony 4.4) should contain only the modern web profiler  
 ![alt text](docs/modern_dev.png)  
 
-## References  
+## References
 - [Strangler Pattern: How to strangle your legacy system](https://blog.fingo.pl/strangler-pattern-how-to-strangle-your-legacy-system/)
 - [Migration Symfony 1.4 to Symfony 4.4 using Strangler Pattern](https://blog.fingo.pl/strangler-pattern-how-to-strangle-your-legacy-system/)
 - [Migrating an Existing Application to Symfony](https://symfony.com/doc/current/migration.html)
