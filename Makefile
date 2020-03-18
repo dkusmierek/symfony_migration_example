@@ -1,4 +1,5 @@
 build:
+	chmod 777 legacy/cache/ legacy/log/
 	docker run --rm -v $(CURDIR):/app -w /app composer --optimize-autoloader install
 
 start:
