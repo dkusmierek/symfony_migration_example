@@ -5,6 +5,7 @@ services:
     image: php:7.3.11-fpm
     volumes:
       - ./:/app:delegated
+    working_dir: /app
 
   migration.dev.local:
     image: nginx:1.11
