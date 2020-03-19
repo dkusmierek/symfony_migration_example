@@ -22,9 +22,6 @@ class LegacyController extends AbstractController
         $legacyResponse = $sfContext->getResponse();
         $sfContext->shutdown();
 
-        $response = new Response($legacyResponse->getContent(), $legacyResponse->getStatusCode());
-        $response->headers->set('Content-Type', $legacyResponse->getContentType());
-
         return $this->prepareResponse($legacyResponse);
     }
 
