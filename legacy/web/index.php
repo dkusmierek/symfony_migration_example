@@ -7,4 +7,5 @@ $sfContext = sfContext::createInstance($configuration);
 ob_start();
 $sfContext->dispatch();
 $sfContext->getResponse()->setContent(ob_get_contents());
+$sfContext->shutdown();
 ob_clean();

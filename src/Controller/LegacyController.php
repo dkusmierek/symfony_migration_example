@@ -20,7 +20,6 @@ class LegacyController extends AbstractController
         /** @var \sfWebResponse $legacyResponse */
         /** @var \sfContext $sfContext */
         $legacyResponse = $sfContext->getResponse();
-        $sfContext->shutdown();
 
         return $this->prepareResponse($legacyResponse);
     }
