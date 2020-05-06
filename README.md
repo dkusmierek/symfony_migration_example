@@ -49,5 +49,5 @@ modern one is visible on the bottom
 
 ## References
 - [Strangler Pattern: How to strangle your legacy system](https://blog.fingo.pl/strangler-pattern-how-to-strangle-your-legacy-system/)
-- [Migration Symfony 1.4 to Symfony 4.4 using Strangler Pattern](https://blog.fingo.pl/strangler-pattern-how-to-strangle-your-legacy-system/)
+- [Migration Symfony 1.4 to Symfony 4.4 using Strangler Pattern](https://blog.fingo.pl/migration-symfony-1-4-to-symfony-4-4-using-strangler-pattern/)
 - [Migrating an Existing Application to Symfony](https://symfony.com/doc/current/migration.html)
